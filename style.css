@@ -3,27 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
-form{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
+body{
+    background-color: #ccc;
 }
-.main-head h1{
-    font-size: 60px;
+.container{
+    max-width: 900px;
+    margin: 0 auto;
 }
-.main-head span{
-    font-size: 50px;
-    color: #00005f;
+.content-box{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(2, 1, 1, 0.3);
 }
-label{
+.content-box span{
     font-size: 20px;
-    font-weight: 900;
 }
-input{
-    /* margin-top: 5px;
-    margin-bottom: 25px; */
-    width: 200px;
-    height: 40px;
-    border: 2px solid black;
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
 }
